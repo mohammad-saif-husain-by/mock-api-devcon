@@ -19,12 +19,12 @@ app.get('/stores', (req, res) => {
 });
 
 app.listen(
-    8000,
+    80,
     () => console.log(`
-        Mock API running on http://localhost:8000/ \n
-        KPI: http://localhost:8000/kpi\n
-        Order Due: http://localhost:8000/orders-due\n
-        Sales: http://localhost:8000/sales\n
-        Stores: http://localhost:8000/stores
+        Mock API running on http://localhost:80/ \n
+        KPI: http://localhost:80/kpi\n
+        Order Due: http://localhost:80/orders-due\n
+        Sales: http://localhost:80/sales\n
+        Stores: http://localhost:80/stores
     `)
 );

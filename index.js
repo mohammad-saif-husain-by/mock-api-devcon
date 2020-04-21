@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const data  = require('./kpi-mock');
+const cors = require('cors');
+app.use(cors())
 
 app.get('/kpi', (req, res) => {
     res.status(200).send(data.kpis);
@@ -19,7 +21,7 @@ app.get('/stores', (req, res) => {
 });
 
 app.listen(
-    80,
+    8080,
     () => console.log(`
         Mock API running on http://localhost:80/ \n
         KPI: http://localhost:80/kpi\n
